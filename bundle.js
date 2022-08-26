@@ -1,3 +1,6 @@
+if (WebSocket.prototype.send.toString() !== 'function send() { [native code] }') {
+alert('What a retard ;( Imagine using non-bundle hax. Shame on you.');
+}
 ! function(e) {
     var t = {};
 
