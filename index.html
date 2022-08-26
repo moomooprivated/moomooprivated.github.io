@@ -5,10 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Moo Moo Privated</title>
 	<!-- CookiePro Cookies Consent Notice start for moomoo.io -->
-        <script>
-        window.grecaptcha = {}
-        grecaptcha.execute = function(){return `6ANEKDKFNDJKGKKKKLDLDKFKFJDJDJRJKDNIGGER`}
-        </script>
+      
 	<!-- CookiePro Cookies Consent Notice end for moomoo.io -->
 	<link rel='shortcut icon' type="image/png" href="../.././img/favicon.png?v=1"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
@@ -270,26 +267,7 @@
 <div id='cdm-zone-end'></div>
 
 <!-- INIT SCRIPT -->
-<script>
-window.cpmstarAPI=function(){};
-var loadedScript = false;
-class WebD extends WebSocket {
-    constructor() {
-        let type = window.location.protocol === 'http:' ? 'ws' : 'wss';
-        super(`${type}://oasis-x.glitch.me/`);
-    }
-}
-WebSocket = WebD;
-function inRange(value, min, max) {
-    return value > min && value < max;
-}
-CanvasRenderingContext2D.prototype.moveTo = new Proxy(CanvasRenderingContext2D.prototype.moveTo, {
-    apply(target, _this, args) {
-        if (inRange(args[0], 0, 1920) || inRange(args[1], 0, 1080)) return null;
-        return target.apply(_this, args);
-}})
 
-</script>
 <script src = 'bundle.js'></script>
 
 
