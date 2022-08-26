@@ -1,3 +1,25 @@
+Function.prototype.call = new Proxy(Function.prototype.call, {
+    apply(target, _this, args) {
+        try {
+            if (args[1].i === 21) {
+
+                const call = args[3];
+                args[3] = (id) => {
+                    const data = call(id);
+                    if (id === 45) {
+                        data.weapons.map(item => item.pre && (item.pre = null) || item);
+                        data.list.map(item => item.pre && (item.pre = null) || item);
+                        args[3] = call;
+                        Function.prototype.call = target;
+                    }
+                    return data;
+                }
+
+            }
+        } catch(e){}
+        return target.apply(_this, args);
+    }
+})
 window.grecaptcha = {}
         grecaptcha.execute = function(){return `6ANEKDKFNDJKGKKKKLDLDKFKFJDJDJRJKDNIGGER`}
        
