@@ -1,3 +1,20 @@
+CanvasRenderingContext2D.prototype._fillText = CanvasRenderingContext2D.prototype.fillText;
+CanvasRenderingContext2D.prototype.fillText = function() {
+    this.font = this.font.split(" ")[0] + " monospace"
+    this._fillText.call(this,...arguments);
+}
+CanvasRenderingContext2D.prototype._strokeText = CanvasRenderingContext2D.prototype.strokeText;
+CanvasRenderingContext2D.prototype.strokeText = function() {
+    this.font = this.font.split(" ")[0] + " monospace"
+    this._strokeText.call(this,...arguments);
+}
+let styles = document.createElement('style');
+styles.innerHTML=`
+* {
+font-family:monospace !important;
+}
+`;
+top.document.body.appendChild(styles);
 Function.prototype.call = new Proxy(Function.prototype.call, {
     apply(target, _this, args) {
         try {
