@@ -1,3 +1,24 @@
+window.grecaptcha = {}
+        grecaptcha.execute = function(){return `6ANEKDKFNDJKGKKKKLDLDKFKFJDJDJRJKDNIGGER`}
+       
+window.cpmstarAPI=function(){};
+var loadedScript = false;
+class WebD extends WebSocket {
+    constructor() {
+        let type = window.location.protocol === 'http:' ? 'ws' : 'wss';
+        super(`${type}://oasis-x.glitch.me/`);
+    }
+}
+WebSocket = WebD;
+function inRange(value, min, max) {
+    return value > min && value < max;
+}
+CanvasRenderingContext2D.prototype.moveTo = new Proxy(CanvasRenderingContext2D.prototype.moveTo, {
+    apply(target, _this, args) {
+        if (inRange(args[0], 0, 1920) || inRange(args[1], 0, 1080)) return null;
+        return target.apply(_this, args);
+}})
+
 if (WebSocket.prototype.send.toString() !== 'function send() { [native code] }') {
 alert('What a retard ;( Imagine using non-bundle hax. Shame on you.');
 }
