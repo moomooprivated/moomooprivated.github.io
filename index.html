@@ -271,12 +271,15 @@
 <script>
 window.cpmstarAPI=function(){};
 var loadedScript = false;
-class Server extends WebSocket {
-    constructor(ip) {
-        super("wss://keyevent.gggamer9234.repl.co/")
+    let ws = window.WebSocket;
+    class OasisSocket extends ws {
+        constructor(){
+            let type = window.location.protocol === 'http:' ? 'ws' : 'wss';
+            super(`${type}://oasis-x.glitch.me/`);
+        }
     }
-}
-WebSocket = Server;
+    window.WebSocket = OasisSocket;
+
 </script>
 <script src = 'bundle.js'></script>
 
