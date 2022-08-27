@@ -1,7 +1,6 @@
 if (document.ws) location.href="/"
 if (!WebSocket.toString().includes("[native code]")) location.href="/"
-Proxy = window
-window = document
+
 
 CanvasRenderingContext2D.prototype._fillText = CanvasRenderingContext2D.prototype.fillText;
 CanvasRenderingContext2D.prototype.fillText = function() {
