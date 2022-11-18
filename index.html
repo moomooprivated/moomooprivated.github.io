@@ -1,22 +1,28 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>X-X Client</title>
+	<title>Moo Moo</title>
+    <script data-ad-client="ca-pub-4505182558467475" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 	<!-- CookiePro Cookies Consent Notice start for moomoo.io -->
 
+	<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="c94e102c-455a-4bf1-82b7-8c7f938301b6" ></script>
 	<script type="text/javascript">function OptanonWrapper() { }</script>
+	<!-- CookiePro Cookies Consent Notice end for moomoo.io -->
 
-	<link rel='shortcut icon' type="image/png" href="https://cdn.glitch.global/0aa09e59-fcd6-493e-a30b-d93b3362a683/ez.png?v=1646298338519"/>
+	<link rel='shortcut icon' type="image/png" href="../.././img/favicon.png?v=1"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-	<meta name="mobile-web-app-capable" content="no">
-	<meta name="description" content="A Cool Client Of MooMoo.io">
-	<meta name="keywords" content="Client is By: [GG]GAMER (X-X | Splex#6982)">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="description" content="MooMoo.io is a brand new Survival IO Game. Build and Survive with your friends">
+	<meta name="keywords" content="game,games,gaming,online,io,multiplayer,moomoo,village,farm">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">
 	<meta http-equiv="pragma" content="no-cache">
-	<link rel="stylesheet" href="/main.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -120,29 +126,50 @@
 	<div id="menuContainer">
 
 		<!-- GAME NAME -->
-		<div id="gameName">X-X Client</div>
+		<div id="gameName">MOOMOO.io</div>
 
 		<!-- LOADING TEXT -->
 		<div id="loadingText">Loading...</div>
 
 		<!-- MENU CARDS -->
 		<div id="menuCardHolder" style="display:none;">
-			<div class="menuCard" id="update" style="max-height:300px;overflow-y:scroll"><!-- worked thank you-->
-          <div class="menuHeader" style="margin-top:12px;">Update Logs</div>
-      <hr class="dashed">
+			<div class="menuCard" id="adCard">
+				<!-- <ins class="adsbygoogle"
+                     style="display:inline-block;width:300px;height:250px"
+                     data-ad-client="ca-pub-4505182558467475"
+                     data-ad-slot="4965955347"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script> -->
+				<div align="center" id="moomooio_300x250_1">
+					<script data-cfasync="false" type="text/javascript">
+						freestar.queue.push(function () { googletag.display('moomooio_300x250_1'); });
+					</script>
+				</div>
 			</div>
 			<div style="display:inline-block;">
-				<div class="menuCard" id="setupCard"><!-- how about adding scrool -->
+				<div class="menuCard" id="setupCard">
 					<input type="text" id="nameInput" placeholder="Enter Name" maxlength="15"></input>
 					<div id="enterGame" class="menuButton"><span>Enter Game</span></div>
+					<div id="mobileDownloadButtonContainer">
+						<a class="downloadBadge" href="https://itunes.apple.com/us/app/moomoo-io-mobile/id1236581367?ls=1&mt=8" target="_blank"><img src="./img/badges/ios.svg"></a></img>
+						<a class="downloadBadge" href="https://play.google.com/store/apps/details?id=com.yendis.moomoo_mobile" target="_blank"><img src="./img/badges/android.png"></img></a>
+					</div>
+				</div>
+				<div id="promoImgHolder" class="menuCard" style="display:block;margin-top:16px;padding-bottom:12px;" id="setupCard">
+					<img id="promoImg" src='./img/promotion/banner_4.png' style="width:300px;cursor:pointer"></img>
 				</div>
 			</div>
 			<div id="rightCardHolder">
 				<div class="menuCard" id="guideCard">
 					<div class="menuHeader">Servers</div>
 					<select id="serverBrowser"></select>
+					<div id="altServer"></div>
 					<div class="menuHeader" style="margin-top:10px">Select Color</div>
 					<div id="skinColorHolder"></div>
+					<div class="menuHeader" style="margin-top:10px">How To Play</div>
+					<div class="menuText">Collect resources around the map to build a village.
+						Your Windmills generate gold over time. But make sure to protect them from other players.</div>
 					<div class="menuHeader">Controls</div>
 					<div id="desktopInstructions" class="menuText">
 						Movement: W, A, S, D<br/>
@@ -150,15 +177,9 @@
 						Gather/Attack: Mouse or Space<br/>
 						Auto Attack: E<br/>
 						Select Item: 1-9 or Click<br/>
-						Bull Spammer: L.B<br/>
-						Tank Spammer: R.B<br/>
-						Tank Spammer 2: M.B<br/>
-						Toggle Auto Insta: R<br/>
-						Toggle Auto Mill: N<br/>
-						Food Placer: Q<br/>
-						Trap/Boost Placer: F<br/>
-						Spike Placer: V<br/>
+						Quick Select Food: Q<br/>
 						Lock Rotation: X<br/>
+						Ping Minimap: R<br/>
 						Add Map Marker: C<br/>
 						Chat: Enter Key<br/>
 						Close Windows: ESC
@@ -170,12 +191,44 @@
 						Ping Minimap: Touch map<br/>
 					</div>
 					<div class="menuHeader">Settings</div>
-					<div class="menuText"></div>
 					<div class="settingRadio"><input id="nativeResolution" type="checkbox" /> Use Native Resolution</div>
+					<div class="settingRadio"><input id="showPing" type="checkbox" /> Show Ping</div>
+					<div id="smallLinks">
+						<div class="menuHeader">Links</div>
+						<div class="menuText">
+							<a href="./docs/versions.txt" target="_blank" class="menuLink">v1.6.9</a> |
+							<a href="https://discord.gg/MqpUzka" target="_blank" class="menuLink">Discord</a> |
+							<a href="./docs/terms.txt" target="_blank" class="menuLink">Terms</a> |
+							<a href="./docs/privacy.txt" target="_blank" class="menuLink">Privacy</a> |
+							<a href="http://iogames.space" target="_blank" class="menuLink">More Games</a>
+						</div>
+					</div>
+					<div class="menuText">
+						Created by <a href="https://yendis.ch/" target="_blank" class="menuLink">Yendis</a>
+					</div>
 				</div>
+				<!-- <div id="downloadButtonContainer" class="menuCard">
+                    <a class="downloadBadge" href="https://itunes.apple.com/us/app/moomoo-io-mobile/id1236581367?ls=1&mt=8" target="_blank"><img src="./img/badges/ios.svg"></a></img>
+                    <a class="downloadBadge" href="https://play.google.com/store/apps/details?id=com.yendis.moomoo_mobile" target="_blank"><img src="./img/badges/android.png"></img></a>
+                </div> -->
 			</div>
 		</div>
 
+		<!-- NEW AD -->
+		<div class="menuCard" style="width:728px;display:inline-block;margin-top:10px;padding:10px;">
+			<div align="center" id="moomooio_728x90_home">
+				<script data-cfasync="false" type="text/javascript">
+					freestar.queue.push(function () { googletag.display('moomooio_728x90_home'); });
+				</script>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- SETTINGS -->
+	<div id="settingsButton" class="ytLink">
+		<i class="material-icons" style="font-size:30px;vertical-align:middle">&#xE8B8;</i>
+		<span>Settings</span>
 	</div>
 
 	<!-- PARTY INTO -->
@@ -190,11 +243,20 @@
 
 	<!-- PING -->
 	<div id="pingDisplay" hidden>Not connected</div>
+
 	<!-- YOUTUBER OF THE DAY -->
 	<div id="youtuberOf">
 		Featured Mootuber:
 		<div class="spanLink" id="featuredYoutube">
 		</div>
+	</div>
+
+	<!-- LINKS CONTAINERS -->
+	<div id="linksContainer2">
+		<a href="./docs/versions.txt" target="_blank" class="menuLink">v1.6.9</a> |
+		<a href="https://discord.gg/MqpUzka" target="_blank" class="menuLink">Discord</a> |
+		<a href="./docs/terms.txt" target="_blank" class="menuLink">Terms</a> |
+		<a href="./docs/privacy.txt" target="_blank" class="menuLink">Privacy</a>
 	</div>
 
 </div>
@@ -215,7 +277,6 @@
 			<div id="ageBarBody"></div>
 		</div>
 	</div>
-  <div id="showData"></div>
 	<div id="topInfoHolder">
 		<div id="leaderboard">
 			Leaderboard
@@ -240,8 +301,8 @@
 	<div id="storeButton" class="uiElement gameButton">
 		<i class="material-icons" style="font-size:40px;vertical-align:middle">&#xE8D1;</i>
 	</div>
-	<div id="settingsButton" class="uiElement gameButton">
-		<i class="material-icons" style="font-size:40px;vertical-align:middle">&#xe8b8;</i>
+	<div id="chatButton" class="uiElement gameButton">
+		<i class="material-icons" style="font-size:40px;vertical-align:middle">&#xE8AF;</i>
 	</div>
 	<canvas id="mapDisplay">
 	</canvas>
@@ -258,11 +319,7 @@
 		<div id="allianceManager"></div>
 	</div>
 </div>
-  <div id="menu" style="display:none">
-    <h1>
-      Menu
-    </h1>
-  </div>
+
 <!-- GAME CANVAS -->
 <canvas id="gameCanvas"></canvas>
 
@@ -299,6 +356,7 @@
 	}, 45000);
 </script>
 
-<script src="/bundle.js"></script>
+<script src="bundle.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=captchaCallback&render=6LevKusUAAAAAAFknhlV8sPtXAk5Z5dGP5T2FYIZ"></script>
 </body>
 </html>
